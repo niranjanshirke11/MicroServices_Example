@@ -1,0 +1,14 @@
+{
+    "name": "mern-microservices-demo",
+    "version": "1.0.0",
+    "description": "MERN Microservices Demo — College Project",
+    "private": true,
+    "scripts": {
+        "install:all": "cd user-service && npm install && cd ../product-service && npm install && cd ../order-service && npm install && cd ../api-gateway && npm install && cd ../client && npm install",
+        "start:gateway": "cd api-gateway && node server.js",
+        "start:users": "cd user-service && node server.js",
+        "start:products": "cd product-service && node server.js",
+        "start:orders": "cd order-service && node server.js",
+        "start:client": "cd client && npm start"
+    }
+}
